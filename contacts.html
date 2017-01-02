@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/favicon.gif" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Главная">
+            <img src="./images/logo.png" alt="logo" title="Главная">
+        </a>
+        <ul class="hr">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </header>
+    <hr>
+        <h2 class="head">Магазин &quot;Мир посуды&quot; всегда рад Вашим отзывам и замечаниям</h2>
+    <form action="mailto:homelessjester@gmail.com" enctype="text/plain" name="feedback">
+        <fieldset>
+            <legend>Напишите нам</legend>
+            <label for="formName">Имя*</label>
+            <input id="formName" type="text" size="40" placeholder="Ваше имя" autofocus required>
+            <br>
+            <label for="formFamily">Фамилия*</label>
+            <input id="formFamily" type="text" size="40" placeholder="Ваша фамилия" required>
+            <br>
+            <label for="formFatherName">Отчество</label>
+            <input id="formFatherName" type="text" size="40" placeholder="Ваше отчество">
+            <br>
+            <label for="formPhone">Телефон для обратного звонка</label>
+            <input id="formPhone" type="tel" placeholder="Ваш телефон">
+            <br>
+            <label for="formEmail">Адрес электронной почты*</label>
+            <input id="formEmail" type="email" placeholder="Ваш e-mail" required>
+            <br>
+            <label for="formTheme">Тема сообщения</label>
+            <input id="formTheme" type="text" placeholder="Тема сообщения">
+            <br>
+            <label for="formMessage">Сообщение*</label>
+            <textarea id="formMessage" placeholder="Текст вашего сообщения" cols="30" rows="10" maxlength="5000" required></textarea>
+            <br>
+            <p><b>Оцените работу сайта</b></p>
+            <p><input type="radio" name="answer" value="a1" title="1">1<br>
+                <input type="radio" name="answer" value="a2" title="2">2<br>
+                <input type="radio" name="answer" value="a3" title="3">3<br>
+                <input type="radio" name="answer" value="a4" title="4">4<br>
+                <input type="radio" name="answer" value="a5" title="5" checked>5</p>
+            <p>
+            <br>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить форму">
+            <h6>Поля, отмеченные *, обязательны для заполнения</h6>
+        </fieldset>
+    </form>
+    <fieldset id="contacts">
+        <legend>Наши контакты</legend>
+            <div itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name">Мир посуды</span>
+                <hr>
+                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <h2>Наш адрес</h2>
+                    <span itemprop="streetAddress">Красная площадь, 3</span><br>
+                    <span itemprop="postalCode">119021</span><br>
+                    <span itemprop="addressLocality">Москва</span><br>
+                    <span itemprop="addressCountry ">Россия</span><br>
+                </div>
+                <hr>
+                Телефон:<span itemprop="telephone">+7 800 555-35-35</span>,
+                Факс:<span itemprop="faxNumber">+7 800 555-35-35</span>,
+                Электронная почта: <span itemprop="email">panworld@gmail.com</span><br>
+            </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8980.876247507684!2d37.6215215!3d55.7546967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2f2265b70fe6a05!2z0JPQo9Cc!5e0!3m2!1sru!2sua!4v1481913340689"
+                    title="ГУМ на карте" name="map" allowfullscreen seamless>
+            </iframe>
+        </div>
+    </fieldset>
+    <footer>
+        <h3>&copy;Все права защищены</h3>
+    </footer>
+</body>
+</html>
